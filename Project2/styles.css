@@ -1,0 +1,137 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Center the login card */
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login card styling */
+.login-card {
+    width: 350px;
+    background-color: #1f1f1f;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Heading */
+.login-card h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Form container */
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+.form-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Input fields */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px;
+    background-color: #2c2c2c;
+    border: 2px solid #444;
+    border-radius: 8px;
+    color: #e0e0e0;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+    color: #aaa;
+}
+
+.form-group input:focus {
+    border-color: #ff4081;
+    background-color: #333;
+    outline: none;
+}
+
+/* Submit button */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #e0336f;
+    transform: scale(1.05);
+}
+
+.submit-btn:active {
+    transform: scale(1);
+}
+
+/* Error message styling */
+.error-message {
+    color: #ff4081;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    .login-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .login-card h2 {
+        font-size: 26px;
+    }
+
+    .form-group input,
+    .submit-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
