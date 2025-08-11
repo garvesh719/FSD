@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3D Flip Card — Demo</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1 class="page-title">Interactive 3D Flip Card (HTML &amp; CSS)</h1>
+
+    <!-- Flip card container (semantic article) -->
+    <article class="flip-card" tabindex="0" aria-label="Project card: Front shows image and title; flip to see details">
+      <div class="flip-card-inner">
+        <!-- FRONT FACE -->
+        <figure class="card-face card-front">
+          <!-- Replaced placeholder with pic.png -->
+          <img src="pic.png" alt="PixelWave branding preview" />
+          <figcaption class="card-caption">
+            <h3 class="card-title">PixelWave Rebrand</h3>
+            <p class="card-tagline">Bold branding &amp; responsive web UI</p>
+          </figcaption>
+        </figure>
+
+        <!-- BACK FACE -->
+        <div class="card-face card-back" aria-hidden="true">
+          <div class="back-content">
+            <h3 class="back-title">Project Overview</h3>
+            <p class="back-desc">
+              Reimagined brand identity and landing experience for PixelWave. Focused on clarity, contrast,
+              and conversion — includes style guide, components and responsive templates.
+            </p>
+            <ul class="skills">
+              <li>Branding</li>
+              <li>UI / UX</li>
+              <li>Responsive Web</li>
+            </ul>
+
+            <a class="cta" href="#contact" role="button">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <p class="note">Tip: Hover the card or focus it (tab) to flip. Resize to test responsiveness.</p>
+  </main>
+</body>
+</html>
